@@ -6,6 +6,6 @@ class Matriz:
         for i in range(linhas):
             linha = []
             for j in range(colunas):
-                linha.append(random.randint(0,100))
+                linha.append(random.randint(0,9))
             matriz.append(linha)
         return matriz

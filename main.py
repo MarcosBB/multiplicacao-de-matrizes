@@ -10,7 +10,6 @@ def calculaElemento(matriz1, matriz2, linha, coluna, aux_num):
     for el in range(np.shape(matriz2)[1]):
         aux_num.value += matriz1[linha][el] * matriz2[el][coluna]
 
-#   IMPLEMENTAÇÃO SEQUENCIAL DO PROBLEMA
 def forks(matriz1, matriz2):
     print("Matriz esperada: \n", np.dot(matriz1, matriz2), "\n")
     aux_num = multiprocessing.Value('i', 0)
@@ -30,6 +29,7 @@ def forks(matriz1, matriz2):
         print("Matriz Resultante: \n", resultado)
         print("\n A multiplicação levou um total de ", tempo_decorrido, " segundos.")
         return tempo_decorrido
+    
 def sequencial(matriz1, matriz2):
     print("Matriz esperada: \n", np.dot(matriz1,matriz2), "\n")
     aux_num = 0

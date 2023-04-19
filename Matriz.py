@@ -16,16 +16,13 @@ def calcula_elemento(matriz1, matriz2, linha, coluna, aux_num):
         aux_num.value += matriz1[linha][el] * matriz2[el][coluna]
     
 def sequencial(matriz1, matriz2, shape):
-    aux_num = 0
-    num_elementos = 0
     resultado = shape
     for linha in range(len(shape[0])):
         for coluna in range(len(shape[0])):
-            num_elementos += 1
+            aux_num = 0
             for el in range(len(shape[0])):
                 aux_num += matriz1[linha][el] * matriz2[el][coluna]
             resultado[linha][coluna] = aux_num
-            aux_num = 0
     return resultado
 
 def multi_processo(matriz1, matriz2, shape):

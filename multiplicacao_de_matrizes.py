@@ -1,6 +1,5 @@
 from Matriz import matriz_randomica, multi_processo, sequencial, multi_processo
 import time
-import numpy as np
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -73,9 +72,16 @@ if args.sequencial or multiplication_types_sum == 0:
 
 
 # Multiprocessos
-# tempos_de_execução = []
-# if args.processos:
-# for i in range(args.repeticoes):
-#     comeco = time.time()
-#     # resultado = multi_processo(matriz_1, matriz_2)
-#     fim = time.time()
+tempos_de_execução = []
+if args.processos:
+    for i in range(args.repeticoes):
+        comeco = time.time()
+        resultado = multi_processo(matriz_1, matriz_2, shape)
+        fim = time.time()
+        tempos_de_execução.append(fim - comeco)
+        print(f"Tempo de execução {i + 1}: {fim - comeco}")
+    tempos_de_execucao = sum(tempos_de_execução) / len(tempos_de_execução)
+    print(f"\033[32mMédia de tempo de execução: {tempos_de_execucao}\033[0m")
+
+
+# Multithreads

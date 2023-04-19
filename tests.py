@@ -8,7 +8,7 @@ class TestMatriz(TestCase):
     def setUpClass(cls):
         cls.matriz_1 = matriz_randomica(10, 10)
         cls.matriz_2 = matriz_randomica(10, 10)
-        cls.resultado = np.dot(cls.matriz_1, cls.matriz_2)
+        cls.resultado = numpy.dot(cls.matriz_1, cls.matriz_2)
         cls.shape = [[0 for j in range(len(cls.matriz_2[0]))] for i in range(len(cls.matriz_1))]
 
     def test_sequencial(self):

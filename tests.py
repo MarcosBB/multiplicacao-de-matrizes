@@ -1,5 +1,5 @@
 from unittest import TestCase
-from Matriz import multi_processo, sequencial, multi_processo
+from matriz import multi_processo, sequencial, multi_thread
 from utils import matriz_randomica, divide_linhas_por_partes
 import numpy
 
@@ -27,6 +27,18 @@ class TestMatriz(TestCase):
     def test_multi_processo_com_divisao_em_partes_nao_exatas(self):
         numpy.testing.assert_array_equal(
             multi_processo(self.matriz_1, self.matriz_2, 4), 
+            self.resultado
+        )
+
+    def test_multi_thread(self):
+        numpy.testing.assert_array_equal(
+            multi_thread(self.matriz_1, self.matriz_2, 5), 
+            self.resultado
+        )
+
+    def test_multi_thread_com_divisao_em_partes_nao_exatas(self):
+        numpy.testing.assert_array_equal(
+            multi_thread(self.matriz_1, self.matriz_2, 4), 
             self.resultado
         )
 

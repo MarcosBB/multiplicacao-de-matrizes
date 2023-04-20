@@ -36,14 +36,3 @@ def calcula_linha(matriz1, matriz2, linha):
     for coluna in range(len(matriz2[0])):
         resultado.append(calcula_elemento(matriz1, matriz2, linha, coluna))
     return resultado
-
-def calcula_linhas(matriz1, matriz2, linhas, resultado_pipe=None):
-    resultado = {}
-    for linha in linhas:
-        # resultado.append(calcula_linha(matriz1, matriz2, linha))
-        resultado[linha] = calcula_linha(matriz1, matriz2, linha)
-    
-    if resultado_pipe is not None:
-        resultado_pipe.send(resultado)
-
-    return resultado

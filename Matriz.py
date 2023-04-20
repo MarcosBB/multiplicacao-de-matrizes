@@ -1,42 +1,41 @@
-import random
-import numpy as np
 import multiprocessing
+from utils import divide_linhas_por_partes, calcula_linhas, calcula_linha
 
-def matriz_randomica(linhas, colunas):
-    matriz = []
-    for i in range(linhas):
-        linha = []
-        for j in range(colunas):
-            linha.append(random.randint(0,9))
-        matriz.append(linha)
-    return matriz
-
-def calcula_elemento(matriz1, matriz2, linha, coluna, aux_num, shape):
-    for el in range(len(shape[1])):
-        aux_num.value += matriz1[linha][el] * matriz2[el][coluna]
-    
-def sequencial(matriz1, matriz2, shape):
-    resultado = shape.copy()
-    for linha in range(len(shape[0])):
-        for coluna in range(len(shape[1])):
-            aux_num = 0
-            for el in range(len(shape[1])):
-                aux_num += matriz1[linha][el] * matriz2[el][coluna]
-            resultado[linha][coluna] = aux_num
+def sequencial(matriz1, matriz2):
+    resultado = []
+    for linha in range(len(matriz1)):
+        resultado.append(calcula_linha(matriz1, matriz2, linha))
     return resultado
 
-def multi_processo(matriz1, matriz2, shape):
-    aux_num = multiprocessing.Value('i', 0)    
-    resultado = shape.copy()
-    for linha in range(len(shape[0])):
-        for coluna in range(len(shape[1])):
-            filho = multiprocessing.Process(
-                target=calcula_elemento, 
-                args=(matriz1, matriz2, linha, coluna, aux_num, shape),
+def multi_processo(matriz1, matriz2, partes):
+    lista_de_linhas = divide_linhas_por_partes(len(matriz1), partes)
+
+    resultado_pipes = []
+    processos = []
+    for linhas in lista_de_linhas:
+        resultado_pipe, filho_pipe = multiprocessing.Pipe()
+        resultado_pipes.append(resultado_pipe)
+        processos.append(
+            multiprocessing.Process(
+                target=calcula_linhas, 
+                args=(matriz1, matriz2, linhas, filho_pipe)
             )
-            filho.start()
-            resultado[linha][coluna] = aux_num.value
-            aux_num.value = 0
+        )
+    
+    for processo in processos:
+        processo.start()
+    
+    resultado_dict = {}
+    for resultado_pipe in resultado_pipes:
+        resultado_dict.update(resultado_pipe.recv())
+    
+    for processo in processos:
+        processo.join()
+    
+    resultado = []
+    for i in range(len(matriz1)):
+        resultado.append(resultado_dict[i])
+    
     return resultado
 
 def multi_thread(matriz1, matriz2, shape):

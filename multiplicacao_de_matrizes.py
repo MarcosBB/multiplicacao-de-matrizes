@@ -1,4 +1,4 @@
-from Matriz import multi_processo, sequencial, multi_processo
+from matriz import multi_processo, sequencial, multi_thread
 from utils import matriz_randomica
 import time
 import argparse
@@ -54,12 +54,11 @@ parser.add_argument(
 args = parser.parse_args()
 matriz_1 = matriz_randomica(args.ordem, args.ordem)
 matriz_2 = matriz_randomica(args.ordem, args.ordem)
-shape = [[0 for j in range(len(matriz_2[0]))] for i in range(len(matriz_1))]
 
 # validação dos argumentos
 if args.partes and (args.processos or args.threads):
-    if args.partes > len(shape[0]):
-        raise ValueError("O número de partes deve ser menor ou igual ao número de colunas da matriz")
+    if args.partes > len(matriz_1):
+        raise ValueError("O número de partes deve ser menor ou igual ao número de linhas da matriz")
         
 
 multiplication_types_sum = sum([args.sequencial, args.processos, args.threads])
@@ -77,9 +76,9 @@ if args.sequencial or multiplication_types_sum == 0:
         fim = time.time()
 
         tempos_de_execução.append(fim - comeco)
-        print(f"Tempo de execução {i + 1}: {fim - comeco}")
+        print(f"Tempo de execução {i + 1}: {fim - comeco} segundos")
     tempos_de_execucao = sum(tempos_de_execução) / len(tempos_de_execução)
-    print(f"\033[32mMédia de tempo de execução: {tempos_de_execucao}\033[0m")
+    print(f"\033[32mMédia de tempo de execução: {tempos_de_execucao} segundos\033[0m")
 
 
 # Multiprocessos
@@ -87,7 +86,7 @@ tempos_de_execução = []
 if args.processos:
     print()
     print("Executando multiplicação com processos")
-    print("-----------------------------------")
+    print("--------------------------------------")
 
     for i in range(args.repeticoes):
         comeco = time.time()
@@ -95,10 +94,26 @@ if args.processos:
         fim = time.time()
 
         tempos_de_execução.append(fim - comeco)
-        print(f"Tempo de execução {i + 1}: {fim - comeco}")
+        print(f"Tempo de execução {i + 1}: {fim - comeco} segundos")
 
     tempos_de_execucao = sum(tempos_de_execução) / len(tempos_de_execução)
-    print(f"\033[32mMédia de tempo de execução: {tempos_de_execucao}\033[0m")
+    print(f"\033[32mMédia de tempo de execução: {tempos_de_execucao} segundos\033[0m")
 
 
 # Multithreads
+tempos_de_execução = []
+if args.threads:
+    print()
+    print("Executando multiplicação com threads")
+    print("------------------------------------")
+
+    for i in range(args.repeticoes):
+        comeco = time.time()
+        resultado = multi_thread(matriz_1, matriz_2, args.partes)
+        fim = time.time()
+
+        tempos_de_execução.append(fim - comeco)
+        print(f"Tempo de execução {i + 1}: {fim - comeco} segundos")
+
+    tempos_de_execucao = sum(tempos_de_execução) / len(tempos_de_execução)
+    print(f"\033[32mMédia de tempo de execução: {tempos_de_execucao} segundos\033[0m")

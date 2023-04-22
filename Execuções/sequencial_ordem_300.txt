@@ -1,0 +1,54 @@
+
+Executando multiplicação sequencial
+-----------------------------------
+Tempo de execução 1: 3.491163492202759 segundos
+Tempo de execução 2: 3.8748626708984375 segundos
+Tempo de execução 3: 4.190772771835327 segundos
+Tempo de execução 4: 3.4980859756469727 segundos
+Tempo de execução 5: 3.7028212547302246 segundos
+Tempo de execução 6: 3.4323391914367676 segundos
+Tempo de execução 7: 3.404388427734375 segundos
+Tempo de execução 8: 3.4071075916290283 segundos
+Tempo de execução 9: 3.414052724838257 segundos
+Tempo de execução 10: 3.468465566635132 segundos
+Tempo de execução 11: 3.4020779132843018 segundos
+Tempo de execução 12: 3.39738130569458 segundos
+Tempo de execução 13: 3.4037578105926514 segundos
+Tempo de execução 14: 3.3822574615478516 segundos
+Tempo de execução 15: 3.449615716934204 segundos
+Tempo de execução 16: 3.4902939796447754 segundos
+Tempo de execução 17: 3.374361038208008 segundos
+Tempo de execução 18: 3.557365894317627 segundos
+Tempo de execução 19: 3.400960683822632 segundos
+Tempo de execução 20: 3.365727424621582 segundos
+Tempo de execução 21: 3.360424518585205 segundos
+Tempo de execução 22: 3.358348846435547 segundos
+Tempo de execução 23: 3.412306070327759 segundos
+Tempo de execução 24: 3.5067176818847656 segundos
+Tempo de execução 25: 3.3832833766937256 segundos
+Tempo de execução 26: 3.3547351360321045 segundos
+Tempo de execução 27: 3.4084765911102295 segundos
+Tempo de execução 28: 3.374089241027832 segundos
+Tempo de execução 29: 3.380007028579712 segundos
+Tempo de execução 30: 3.4022507667541504 segundos
+Tempo de execução 31: 3.3955485820770264 segundos
+Tempo de execução 32: 3.3540921211242676 segundos
+Tempo de execução 33: 3.390019178390503 segundos
+Tempo de execução 34: 3.412958860397339 segundos
+Tempo de execução 35: 3.3587183952331543 segundos
+Tempo de execução 36: 3.3759970664978027 segundos
+Tempo de execução 37: 3.3798046112060547 segundos
+Tempo de execução 38: 3.5418033599853516 segundos
+Tempo de execução 39: 3.3834288120269775 segundos
+Tempo de execução 40: 3.3695828914642334 segundos
+Tempo de execução 41: 3.4119677543640137 segundos
+Tempo de execução 42: 3.3826844692230225 segundos
+Tempo de execução 43: 3.3926281929016113 segundos
+Tempo de execução 44: 3.359480857849121 segundos
+Tempo de execução 45: 3.3987741470336914 segundos
+Tempo de execução 46: 3.3974618911743164 segundos
+Tempo de execução 47: 3.4292798042297363 segundos
+Tempo de execução 48: 3.384511709213257 segundos
+Tempo de execução 49: 3.3809022903442383 segundos
+Tempo de execução 50: 3.384399890899658 segundos
+[32mMédia de tempo de execução: 3.438650860786438 segundos[0m

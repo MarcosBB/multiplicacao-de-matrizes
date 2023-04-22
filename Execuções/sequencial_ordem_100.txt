@@ -1,0 +1,54 @@
+
+Executando multiplicação sequencial
+-----------------------------------
+Tempo de execução 1: 0.19601821899414062 segundos
+Tempo de execução 2: 0.1242671012878418 segundos
+Tempo de execução 3: 0.12233591079711914 segundos
+Tempo de execução 4: 0.1226038932800293 segundos
+Tempo de execução 5: 0.12300872802734375 segundos
+Tempo de execução 6: 0.12248921394348145 segundos
+Tempo de execução 7: 0.12384653091430664 segundos
+Tempo de execução 8: 0.12251543998718262 segundos
+Tempo de execução 9: 0.12264084815979004 segundos
+Tempo de execução 10: 0.1224222183227539 segundos
+Tempo de execução 11: 0.12308549880981445 segundos
+Tempo de execução 12: 0.12373852729797363 segundos
+Tempo de execução 13: 0.12334370613098145 segundos
+Tempo de execução 14: 0.12202262878417969 segundos
+Tempo de execução 15: 0.12228155136108398 segundos
+Tempo de execução 16: 0.12195420265197754 segundos
+Tempo de execução 17: 0.12636208534240723 segundos
+Tempo de execução 18: 0.12237715721130371 segundos
+Tempo de execução 19: 0.12221360206604004 segundos
+Tempo de execução 20: 0.12210464477539062 segundos
+Tempo de execução 21: 0.1223146915435791 segundos
+Tempo de execução 22: 0.12454843521118164 segundos
+Tempo de execução 23: 0.12184786796569824 segundos
+Tempo de execução 24: 0.12161493301391602 segundos
+Tempo de execução 25: 0.12304162979125977 segundos
+Tempo de execução 26: 0.12314105033874512 segundos
+Tempo de execução 27: 0.12618160247802734 segundos
+Tempo de execução 28: 0.1218709945678711 segundos
+Tempo de execução 29: 0.12138628959655762 segundos
+Tempo de execução 30: 0.12142300605773926 segundos
+Tempo de execução 31: 0.12293839454650879 segundos
+Tempo de execução 32: 0.12183237075805664 segundos
+Tempo de execução 33: 0.1222846508026123 segundos
+Tempo de execução 34: 0.12221145629882812 segundos
+Tempo de execução 35: 0.12257504463195801 segundos
+Tempo de execução 36: 0.1284646987915039 segundos
+Tempo de execução 37: 0.12423491477966309 segundos
+Tempo de execução 38: 0.12219738960266113 segundos
+Tempo de execução 39: 0.12236499786376953 segundos
+Tempo de execução 40: 0.12219381332397461 segundos
+Tempo de execução 41: 0.1262037754058838 segundos
+Tempo de execução 42: 0.12434744834899902 segundos
+Tempo de execução 43: 0.1226048469543457 segundos
+Tempo de execução 44: 0.12263083457946777 segundos
+Tempo de execução 45: 0.12229132652282715 segundos
+Tempo de execução 46: 0.12482118606567383 segundos
+Tempo de execução 47: 0.12254166603088379 segundos
+Tempo de execução 48: 0.12141036987304688 segundos
+Tempo de execução 49: 0.1213998794555664 segundos
+Tempo de execução 50: 0.12192273139953613 segundos
+[32mMédia de tempo de execução: 0.12440948009490967 segundos[0m

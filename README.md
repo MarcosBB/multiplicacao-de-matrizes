@@ -47,6 +47,13 @@ Para verificar se as implementações estão funcionando da maneira correta, exe
 python -m unittest
 ```
 
+## Requisitos
+Para rodar esse projeto utilize o `linux` obrigatoriamente. Lembre-se também de ter o python instalado na sua máquina. Tendo tudo isso apenas rode o comando abaixo para baixar os requisitos.
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Autores
 - [Marcos Beraldo Barros](https://github.com/MarcosBB)
 - [Ezequiel Morais](https://github.com/Ezeque)

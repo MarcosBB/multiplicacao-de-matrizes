@@ -1,0 +1,14 @@
+
+Executando multiplicação com threads
+------------------------------------
+Tempo de execução 1: 34.30724382400513 segundos
+Tempo de execução 2: 37.171260833740234 segundos
+Tempo de execução 3: 35.98956608772278 segundos
+Tempo de execução 4: 36.11589550971985 segundos
+Tempo de execução 5: 36.19732975959778 segundos
+Tempo de execução 6: 35.73224401473999 segundos
+Tempo de execução 7: 35.84450435638428 segundos
+Tempo de execução 8: 35.980530977249146 segundos
+Tempo de execução 9: 36.31652045249939 segundos
+Tempo de execução 10: 36.55092144012451 segundos
+[32mMédia de tempo de execução: 36.02060172557831 segundos[0m

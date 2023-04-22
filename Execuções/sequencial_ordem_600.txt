@@ -1,0 +1,54 @@
+
+Executando multiplicação sequencial
+-----------------------------------
+Tempo de execução 1: 31.160475492477417 segundos
+Tempo de execução 2: 30.414143323898315 segundos
+Tempo de execução 3: 30.4028799533844 segundos
+Tempo de execução 4: 30.42241072654724 segundos
+Tempo de execução 5: 30.439812421798706 segundos
+Tempo de execução 6: 30.617666959762573 segundos
+Tempo de execução 7: 31.34101438522339 segundos
+Tempo de execução 8: 38.350220918655396 segundos
+Tempo de execução 9: 36.98736119270325 segundos
+Tempo de execução 10: 37.538466453552246 segundos
+Tempo de execução 11: 37.46299958229065 segundos
+Tempo de execução 12: 36.36676049232483 segundos
+Tempo de execução 13: 34.03993558883667 segundos
+Tempo de execução 14: 34.49982666969299 segundos
+Tempo de execução 15: 37.44688105583191 segundos
+Tempo de execução 16: 37.21742010116577 segundos
+Tempo de execução 17: 37.33350849151611 segundos
+Tempo de execução 18: 36.85756063461304 segundos
+Tempo de execução 19: 36.610722064971924 segundos
+Tempo de execução 20: 34.26118350028992 segundos
+Tempo de execução 21: 30.758599042892456 segundos
+Tempo de execução 22: 30.291518211364746 segundos
+Tempo de execução 23: 29.699894189834595 segundos
+Tempo de execução 24: 29.793238878250122 segundos
+Tempo de execução 25: 31.889923095703125 segundos
+Tempo de execução 26: 30.555306673049927 segundos
+Tempo de execução 27: 39.1325569152832 segundos
+Tempo de execução 28: 35.614728927612305 segundos
+Tempo de execução 29: 43.60029339790344 segundos
+Tempo de execução 30: 42.5499849319458 segundos
+Tempo de execução 31: 32.966137647628784 segundos
+Tempo de execução 32: 37.28359246253967 segundos
+Tempo de execução 33: 31.527853965759277 segundos
+Tempo de execução 34: 41.505191802978516 segundos
+Tempo de execução 35: 43.362337827682495 segundos
+Tempo de execução 36: 42.89740014076233 segundos
+Tempo de execução 37: 42.57947516441345 segundos
+Tempo de execução 38: 33.59298658370972 segundos
+Tempo de execução 39: 36.81764841079712 segundos
+Tempo de execução 40: 35.074647188186646 segundos
+Tempo de execução 41: 34.576021909713745 segundos
+Tempo de execução 42: 36.03272294998169 segundos
+Tempo de execução 43: 36.07792091369629 segundos
+Tempo de execução 44: 36.674320220947266 segundos
+Tempo de execução 45: 36.44660186767578 segundos
+Tempo de execução 46: 36.587695598602295 segundos
+Tempo de execução 47: 36.22087264060974 segundos
+Tempo de execução 48: 36.32123899459839 segundos
+Tempo de execução 49: 36.192638635635376 segundos
+Tempo de execução 50: 36.23356056213379 segundos
+[32mMédia de tempo de execução: 35.45256319522858 segundos[0m

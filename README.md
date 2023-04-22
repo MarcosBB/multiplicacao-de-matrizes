@@ -48,7 +48,7 @@ python -m unittest
 ```
 
 ## Requisitos
-Para rodar esse projeto utilize o `linux` obrigatoriamente. Lembre-se também de ter o python instalado na sua máquina. Tendo tudo isso apenas rode o comando abaixo para baixar os requisitos.
+Para rodar esse projeto utilize o SO `linux`, ou um WSL no windows obrigatoriamente. Lembre-se também de ter o python instalado na sua máquina. Tendo tudo isso apenas rode o comando abaixo para baixar os requisitos.
 
 ```bash
 pip install -r requirements.txt

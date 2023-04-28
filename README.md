@@ -1,9 +1,12 @@
 # Multiplicação de matrizes
 Trata-se de um trabalho do curso de **Sistemas operacionais** da UFRN que trata do assunto de **programação paralela**. 
-O objetivo é verificar as vantagens e desvantagens ta programação paralela na multiplicação de matrizes de ordens grandes.
+O objetivo é verificar as vantagens e desvantagens ta programação paralela na **multiplicação de matrizes de ordens grandes**. Também é objetivo medir o tempo de execução em vários cenários rodando a implementação **sequencial e**usando **threads e processos**.
 
 ## Rodando
-### Rodando os testes de tempo de execução
+### Rodando a medição de tempo de execução
+> **Warning** 
+> Lembre-se de tirar seu computador do modo de economia de energia para obter resultados melhores.
+
 Ao executar o comando a baixo è possivel medir o tempo médio de execução de multiplicação de matrizes de diferentes maneiras, incluindo implementação sequencial, usando processos ou threads
 ```bash
 python multiplicacao_de_matrizes.py
@@ -11,11 +14,12 @@ python multiplicacao_de_matrizes.py
 Para customizar a execução você pode usar alguns parametros e definir variáveis, por exemplo:
 - `-o` ou `--ordem`: define a ordem da matriz
 - `-r` ou `--repeticoes`: define quantas vezes vai ser medido o tempo de execução para cada uma das implementações requeridas
+- `-P` ou `--partes`: define aquantidade de processos ou threads nos quais você quer dividir o problema.
 - entre outras...
 Para saber todos os comandos rode `python multiplicacao_de_matrizes.py --help`
 
 #### Exemplo de comando
-O comando exemplo a seguir roda as implementações sequencial e multi-processos para uma matriz de ordem 200 com 5 repetições cada e, no caso da implementação multi-processos, divide as operações entra 10 processos
+O comando exemplo a seguir roda as implementações sequencial e multi-processos para uma matriz de ordem 200 com 5 repetições cada e, no caso da implementação multi-processos, divide as operações entra 10 processos.
 ```bash
 python multiplicacao_de_matrizes.py --ordem 200 -P 10 --repeticoes 5 --sequencial --processos
 ```
